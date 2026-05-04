@@ -3,18 +3,13 @@
 
 功能：发送"表情链接"文字 + 引用/附带一张图片，自动回复该图片的URL链接。
 """
-from astrbot.api.all import (
-    Star, Context, Plain, Reply, Image
-)
+from astrbot.api.all import Star, Plain, Reply, Image
 from astrbot.api.event import filter
 from astrbot.core.platform.sources.aiocqhttp.aiocqhttp_message_event import AiocqhttpMessageEvent
 
 
 class 表情链接(Star):
     """表情链接——提取消息中的图片URL"""
-
-    def __init__(self, context: Context):
-        super().__init__(context)
 
     @filter.event_message_type(filter.EventMessageType.ALL)
     @filter.platform_adapter_type(filter.PlatformAdapterType.AIOCQHTTP)

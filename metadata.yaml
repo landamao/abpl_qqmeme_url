@@ -1,6 +1,6 @@
 name: 表情链接
 display_name: 表情链接
 desc: 表情链接功能 - 发送"表情链接"文字并附带或引用一个表情，自动回复表情链接
-version: v1.0.0
+version: v1.0.1
 author: 懒大猫
 repo: https://github.com/landamao/abpl_qqmeme_url
